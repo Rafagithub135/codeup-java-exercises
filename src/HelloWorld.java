@@ -43,5 +43,6 @@ public class HelloWorld {
         a += 2000000000;
         a += 2000000000;
         System.out.println(a);
+        // When you go outside of the parameters of the variable designation, it cycles back to the minimum or maximum value of the variable.
     }
 }
