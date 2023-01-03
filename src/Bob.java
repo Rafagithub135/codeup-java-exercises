@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Bob {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Converse with Bob");
+        System.out.print("Converse with Bob\n");
         String userInput = scanner.nextLine();
         if (userInput.endsWith("?")) {
             System.out.println("Sure.");
