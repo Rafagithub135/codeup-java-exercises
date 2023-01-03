@@ -4,7 +4,6 @@ public class ConsoleExercises {
     public static void main(String[] args) {
         double pi = 3.14159;
         System.out.printf("The value of pi is approximately %s.%n", pi);
-
         Scanner scanner = new Scanner(System.in);
 //        System.out.print("Enter a word: ");
 //        String firstWord = scanner.next();
@@ -19,7 +18,9 @@ public class ConsoleExercises {
 //        String sentence = scanner.next();
         // If you enter a sentence, the program will only print the first word using the next method.
 //        System.out.printf("You entered: %s.%n", sentence);
+//        System.out.print("Enter a sentence: ");
 //        String sentence = scanner.nextLine();
+//        System.out.printf("You entered: %s%n", sentence);
         // If you enter a sentence, the program will print the entire sentence using the nextLine method.
         System.out.print("Enter the length of the room: ");
         String length = scanner.nextLine();
