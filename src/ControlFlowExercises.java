@@ -67,5 +67,39 @@ public class ControlFlowExercises {
 //        } else {
 //            System.out.println("Goodbye!");
 //        }
+// Convert given number grades into letter grades.
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a numerical grade from 0 to 100: ");
+        int userGrade = scanner.nextInt();
+        if (userGrade >= 88) {
+            System.out.println("A");
+        } else if (userGrade >= 80) {
+            System.out.println("B");
+        } else if (userGrade >= 67) {
+            System.out.println("C");
+        } else if (userGrade >= 60) {
+            System.out.println("D");
+        } else {
+            System.out.println("F");
+        }
+        System.out.print("Would you like to continue? [y/n] ");
+        String userContinue = scanner.next();
+        if (userContinue.equalsIgnoreCase("y")){
+            System.out.print("Enter a numerical grade from 0 to 100: ");
+            userGrade = scanner.nextInt();
+            if (userGrade >= 88) {
+                System.out.println("A");
+            } else if (userGrade >= 80) {
+                System.out.println("B");
+            } else if (userGrade >= 67) {
+                System.out.println("C");
+            } else if (userGrade >= 60) {
+                System.out.println("D");
+            } else {
+                System.out.println("F");
+            }
+        } else {
+            System.out.println("Goodbye!");
+        }
     }
 }
