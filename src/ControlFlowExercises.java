@@ -71,12 +71,20 @@ public class ControlFlowExercises {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a numerical grade from 0 to 100: ");
         int userGrade = scanner.nextInt();
-        if (userGrade >= 88) {
+        if (userGrade >= 95) {
+            System.out.println("A+");
+        } else if (userGrade >= 88) {
             System.out.println("A");
+        } else if (userGrade >= 85) {
+            System.out.println("B+");
         } else if (userGrade >= 80) {
             System.out.println("B");
+        } else if (userGrade >= 75) {
+            System.out.println("C+");
         } else if (userGrade >= 67) {
             System.out.println("C");
+        } else if (userGrade >= 65) {
+            System.out.println("D+");
         } else if (userGrade >= 60) {
             System.out.println("D");
         } else {
@@ -87,12 +95,20 @@ public class ControlFlowExercises {
         if (userContinue.equalsIgnoreCase("y")){
             System.out.print("Enter a numerical grade from 0 to 100: ");
             userGrade = scanner.nextInt();
-            if (userGrade >= 88) {
+            if (userGrade >= 95) {
+                System.out.println("A+");
+            } else if (userGrade >= 88) {
                 System.out.println("A");
+            } else if (userGrade >= 85) {
+                System.out.println("B+");
             } else if (userGrade >= 80) {
                 System.out.println("B");
+            } else if (userGrade >= 75) {
+                System.out.println("C+");
             } else if (userGrade >= 67) {
                 System.out.println("C");
+            } else if (userGrade >= 65) {
+                System.out.println("D+");
             } else if (userGrade >= 60) {
                 System.out.println("D");
             } else {
