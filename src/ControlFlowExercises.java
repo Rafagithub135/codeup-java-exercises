@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 // Loop Basics
@@ -40,6 +42,30 @@ public class ControlFlowExercises {
 //            } else {
 //                System.out.println(i);
 //            }
+//        }
+// Display a table of powers.
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("What number would you like to go up to? ");
+//        int userInt = scanner.nextInt();
+//        System.out.println("Here is your table!");
+//        System.out.println("number | squared | cubed");
+//        System.out.println("------ | ------- | -----");
+//        for (int i = 1; i <= userInt; i++) {
+//            System.out.printf("%-6d | %-7d | %-5d%n", i, i * i, i * i * i);
+//        }
+//        System.out.print("Would you like to continue? [y/n] ");
+//        String userContinue = scanner.next();
+//        if (userContinue.equalsIgnoreCase("y")) {
+//            System.out.print("What number would you like to go up to? ");
+//            userInt = scanner.nextInt();
+//            System.out.println("Here is your table!");
+//            System.out.println("number | squared | cubed");
+//            System.out.println("------ | ------- | -----");
+//            for (int i = 1; i <= userInt; i++) {
+//                System.out.printf("%-6d | %-7d | %-5d%n", i, i * i, i * i * i);
+//            }
+//        } else {
+//            System.out.println("Goodbye!");
 //        }
     }
 }
