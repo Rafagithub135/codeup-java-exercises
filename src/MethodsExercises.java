@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class MethodsExercises {
-    public static int main(String[] args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // 1. Basic Arithmetic
         // Addition
@@ -9,7 +9,7 @@ public class MethodsExercises {
         num1 = scanner.nextInt();
         System.out.println("Enter second number to add: ");
         num2 = scanner.nextInt();
-//        public static int addition ( int num1, int num2){
+        int addition; (int num1, int num2) {
             return num1 + num2;
         }
 //        public static int subtraction ( int num1, int num2){
