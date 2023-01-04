@@ -14,7 +14,5 @@ public class Bob {
         } else {
             System.out.println("Whatever.");
         }
-
-
     }
 }
