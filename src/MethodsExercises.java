@@ -12,11 +12,11 @@ public class MethodsExercises {
     }
 
     public static int multiplication(int num1, int num2) {
-        for (int i = 1; i < num2; i++) {
-            num1 += num1;
-        }
-//        return num1 * num2;
-        return num1;
+//        for (int i = 1; i < num2; i++) {
+//            num1 += num1;
+//        }
+        return num1 * num2;
+//        return num1;
     }
 
     public static int division(int num1, int num2) {
@@ -25,6 +25,18 @@ public class MethodsExercises {
 
     public static int modulus(int num1, int num2) {
         return num1 % num2;
+    }
+
+    public static int getInteger(int min, int max) {
+        System.out.printf("Enter a number between %d and %d: ", min, max);
+        int userInput = scanner.nextInt();
+        if (userInput >= min && userInput <= max) {
+            System.out.println(userInput);
+            return userInput;
+        } else {
+            System.out.println("Invalid input.");
+            return getInteger(min, max);
+        }
     }
 
 
@@ -42,5 +54,7 @@ public class MethodsExercises {
         // If you try to divide by 0, the code breaks.  Since you can't devide a number by zero I would think the one line should break.
 
         System.out.println(modulus(10, 3));
+
+        getInteger(1, 732);
     }
 }
