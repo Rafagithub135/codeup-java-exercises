@@ -53,8 +53,31 @@ public class MethodsExercises {
     }
     public static void dice() {
         System.out.println("How many sides do the dice have?");
+        int sides = scanner.nextInt();
+        System.out.println("Would you like to roll the dice? [y/n]");
+        String userInput = scanner.next();
+        if (userInput.equalsIgnoreCase("y")) {
+            System.out.println("Rolling the dice...");
+            System.out.println("The first die rolled a " + (int) (Math.random() * sides + 1));
+            System.out.println("The second die rolled a " + (int) (Math.random() * sides + 1));
+            System.out.println("Would you like to roll again? [y/n]");
+            String userInput2 = scanner.next();
+            if (userInput2.equalsIgnoreCase("y")) {
+                dice();
+            } else {
+                System.out.println("Goodbye!");
+                return;
+            }
+        } else {
+            System.out.println("Goodbye!");
+            return;
+        }
         int response = scanner.nextInt();
-
+        int quantityDice = 2;
+        for (int i = 0; i < quantityDice; i++) {
+            int dice = (int) (Math.random() * response) + 1;
+            System.out.println(dice);
+        }
     }
 
 
@@ -76,6 +99,7 @@ public class MethodsExercises {
 //        getInteger(1, 732);
         // 3. Factorial
 //        factorial();
-
+        // 4. Dice
+        dice();
     }
 }
