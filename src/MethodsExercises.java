@@ -38,13 +38,23 @@ public class MethodsExercises {
             return getInteger(min, max);
         }
     }
-    public static int factorial(int num){
+    public static void factorial(){
         System.out.println("Enter an integer between 1 and 10: ");
         int userInput = scanner.nextInt();
-        for (int i = 1; i <= num; i++) {
-            System.out.println(num + "! )
+        String center = "1";
+        long factorial = 1;
+        for (int i = 1; i <= userInput; i++) {
+            factorial *= i;
+            if (i > 1) {
+                center += " X " + i;
+            }
+            System.out.println(i + "! = " + center + " = " + factorial);
         }
-        return ;
+    }
+    public static void dice() {
+        System.out.println("How many sides do the dice have?");
+        int response = scanner.nextInt();
+
     }
 
 
@@ -65,6 +75,7 @@ public class MethodsExercises {
         // 2. Get Integer
 //        getInteger(1, 732);
         // 3. Factorial
-        factorial(5);
+//        factorial();
+
     }
 }
