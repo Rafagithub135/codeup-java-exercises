@@ -100,6 +100,7 @@ public class MethodsExercises {
         // 3. Factorial
 //        factorial();
         // 4. Dice
-        dice();
+//        dice();
+
     }
 }
