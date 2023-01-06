@@ -6,45 +6,44 @@ public class HighLow {
     public static void guessAgain() {
         if (scanner.next().equalsIgnoreCase("y")) {
             scanner.next();
+        } else {
+            return;
         }
     }
 
     public static void guessTheNumber() {
-        int specNumber = 33;
+        int specNumber = (int) (Math.random() * 100);
         System.out.println("I'm thinking of a number between 1 and 100.  Can you guess it?");
-        int number = scanner.nextInt();
         boolean isCorrect = true;
         do {
-            if (number > specNumber) {
-                System.out.println("LOWER");
-                System.out.println("Guess again? [y/n]");
-                guessAgain();
+            int number = scanner.nextInt();
+            if (number == specNumber) {
+                System.out.println("GOOD GUESS!");
+                isCorrect = false;
             } else if (number < specNumber) {
                 System.out.println("HIGHER");
-                System.out.println("Guess again? [y/n]");
-                guessAgain();
-            } else if (number == specNumber) {
-                System.out.println("GOOD GUESS!");
-                return;
+//                guessAgain();
+            } else if (number > specNumber) {
+                System.out.println("LOWER");
+//                    guessAgain();
             } else {
                 System.out.println("Invalid input. Continue? [y/n]");
-
                 String userInput = scanner.next();
                 if (userInput.equalsIgnoreCase("n")) {
                     isCorrect = false;
                 }
             }
-            } while (isCorrect) ;
-            String userInput = scanner.next();
-        }
-        public static void main (String[]args){
-
-
-            guessTheNumber();
-
-
-//        (int) (Math.random() + 1);
-
-
-        }
+        } while (isCorrect);
     }
+
+    public static void main(String[] args) {
+
+
+        guessTheNumber();
+
+
+//
+
+
+    }
+}
