@@ -41,6 +41,7 @@ public class MethodsExercises {
     public static void factorial(){
         System.out.println("Enter an integer between 1 and 10: ");
         int userInput = scanner.nextInt();
+        // Cody assisted greatly with code here
         String center = "1";
         long factorial = 1;
         for (int i = 1; i <= userInput; i++) {
