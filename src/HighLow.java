@@ -13,19 +13,23 @@ public class HighLow {
 
     public static void guessTheNumber() {
         int specNumber = (int) (Math.random() * 100);
-        System.out.println("I'm thinking of a number between 1 and 100.  Can you guess it?");
+        System.out.println("I'm thinking of a number between 1 and 100.  Can you guess it? You get 10 guesses.");
         boolean isCorrect = true;
+        int count = 0;
         do {
+            count++;
+            if (count > 10) {
+                return;
+            }
+            System.out.println(count);
             int number = scanner.nextInt();
             if (number == specNumber) {
                 System.out.println("GOOD GUESS!");
-                isCorrect = false;
+                return;
             } else if (number < specNumber) {
                 System.out.println("HIGHER");
-//                guessAgain();
             } else if (number > specNumber) {
                 System.out.println("LOWER");
-//                    guessAgain();
             } else {
                 System.out.println("Invalid input. Continue? [y/n]");
                 String userInput = scanner.next();
@@ -37,13 +41,6 @@ public class HighLow {
     }
 
     public static void main(String[] args) {
-
-
         guessTheNumber();
-
-
-//
-
-
     }
 }
