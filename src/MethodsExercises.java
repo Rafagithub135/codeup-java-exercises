@@ -84,23 +84,23 @@ public class MethodsExercises {
 
     public static void main(String[] args) {
 
-        // 1. Basic Arithmetic
-        // Addition
+//         1. Basic Arithmetic
+//         Addition
 //        System.out.println(addition(5, 7));
-        // Subtraction
+//         Subtraction
 //        System.out.println(subtraction(10, 5));
-        // Multiplication
+//         Multiplication
 //        System.out.println(multiplication(5, 5));
-        // Division
+//         Division
 //        System.out.println(division(10, 3));
-        // If you try to divide by 0, the code breaks.  Since you can't divide a number by zero I would think the one line should break.
-        // Modulus
+//         If you try to divide by 0, the code breaks.  Since you can't divide a number by zero I would think the one line should break.
+//         Modulus
 //        System.out.println(modulus(10, 3));
-        // 2. Get Integer
+//         2. Get Integer
 //        getInteger(1, 732);
-        // 3. Factorial
-//        factorial();
-        // 4. Dice
+//         3. Factorial
+        factorial();
+//         4. Dice
         dice();
     }
 }
