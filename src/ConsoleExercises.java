@@ -2,9 +2,12 @@ import java.util.Scanner;
 
 public class ConsoleExercises {
     public static void main(String[] args) {
-        double pi = 3.14159;
-        System.out.printf("The value of pi is approximately %.2f\n", pi);
+//        double pi = 3.14159;
+//        System.out.printf("The value of pi is approximately %.2f\n", pi);
         Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter an integer: ");
+//        int userInt = scanner.nextInt();
+//        If something other than an integer is entered, the code breaks.
 //        System.out.print("Enter a word: ");
 //        String firstWord = scanner.next();
 //        System.out.print("Enter a second word: ");
@@ -26,10 +29,14 @@ public class ConsoleExercises {
         String length = scanner.nextLine();
         System.out.print("Enter the width of the room: ");
         String width = scanner.nextLine();
+        System.out.print("Enter the height of the room: ");
+        String height = scanner.nextLine();
         double lengthNum = Double.parseDouble(length);
         double widthNum = Double.parseDouble(width);
+        double heightNum = Double.parseDouble(height);
         double area = lengthNum * widthNum;
         double perimeter = (lengthNum * 2) + (widthNum * 2);
-        System.out.printf("The area of the room is %s SqFt.%nThe perimeter of the room is %s Ft.%n", area, perimeter);
+        double volume = lengthNum * widthNum * heightNum;
+        System.out.printf("The area of the room is %s SqFt.%nThe perimeter of the room is %s Ft.%nThe volume of the room is %s CuFt.%n", area, perimeter, volume);
     }
 }
