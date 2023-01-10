@@ -18,10 +18,15 @@ public class Person {
 
     public void sayHello() {
 //TODO: print a message to the console using the person's name
-        System.out.println("Hello, " + name);
+        System.out.printf("Hello from %s.%n", name);
     }
 
     public static void main(String[] args) {
+//        Person john = new Person("John Smith");
+//        john.sayHello();
+//        john.setName("John Miller");
+//        System.out.println(john.getName());
+
 //        Person person1 = new Person("John");
 //        Person person2 = new Person("John");
 //        System.out.println(person1.getName().equals(person2.getName()));
