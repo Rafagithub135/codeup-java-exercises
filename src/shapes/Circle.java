@@ -8,15 +8,11 @@ public class Circle {
     }
 
     public double getArea() {
-        return Math.PI * radius * radius;
+        return Math.PI * Math.pow(radius, 2);
     }
 
     public double getCircumference() {
         return 2 * Math.PI * radius;
-    }
-
-    public double getDiameter() {
-        return 2 * radius;
     }
 
     public void setRadius(double radius) {
