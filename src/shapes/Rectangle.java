@@ -48,3 +48,5 @@ public class Rectangle extends Quadrilateral implements Measurable {
 //        Rectangle rect1 = new Rectangle(10, 17);
 //        System.out.printf("The area of the rectangle is %d.%nThe perimeter of the rectangle is %d.", rect1.getArea(), rect1.getPerimeter());
 //    }
+
+

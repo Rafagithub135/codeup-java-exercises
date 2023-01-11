@@ -16,4 +16,7 @@ public class ShapesTest {
 //
 //        Rectangle box2 = new Square(5);
 //        System.out.printf("The area of the square is %d.%nThe perimeter of the square is %d.%n", box2.getArea(), box2.getPerimeter());
-    }
+}
+
+//    9. Rectangle is not abstract and does not override abstract method getPerimeter in Measurable.
+//    10.
