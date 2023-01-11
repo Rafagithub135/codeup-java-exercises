@@ -9,11 +9,11 @@ DONE
 Download the MoviesArray file and save it as MoviesArray.java inside of movies. This class has a static method named findAll that will return an array of Movie objects.
 DONE
 Create a class named MoviesApplication that has a main method.
-
+DONE
 Give the user a list of options for viewing all the movies or viewing movies by category.
-
+DONE
 Use your Input class to get input from the user, and display information based on their choice. (Remember to import your Input class)
-
+DONE
 If a category is selected, only movies from that category should be displayed.
 
 Your application should continue to run until the user chooses to exit.
