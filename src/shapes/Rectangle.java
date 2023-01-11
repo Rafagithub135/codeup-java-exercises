@@ -1,6 +1,31 @@
 package shapes;
 
-public class Rectangle {
+public class Rectangle extends Quadrilateral implements Measurable {
+
+    public Rectangle(double length, double width) {
+        super(length, width);
+    }
+
+    @Override
+    public void setLength(double length) {
+
+    }
+
+    @Override
+    public void setWidth(double width) {
+
+    }
+
+    @Override
+    public double getPerimeter() {
+        return 2 * length + 2 * width;
+    }
+
+    @Override
+    public double getArea() {
+        return length * width;
+    }
+}
 
 //    protected int length;
 //
@@ -23,4 +48,3 @@ public class Rectangle {
 //        Rectangle rect1 = new Rectangle(10, 17);
 //        System.out.printf("The area of the rectangle is %d.%nThe perimeter of the rectangle is %d.", rect1.getArea(), rect1.getPerimeter());
 //    }
-}
