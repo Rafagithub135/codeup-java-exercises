@@ -19,4 +19,4 @@ public class ShapesTest {
 }
 
 //    9. Rectangle is not abstract and does not override abstract method getPerimeter in Measurable.
-//    10.
+//    10. Measurable does not have access to the getLength or getWidth methods in the Rectangle class.
