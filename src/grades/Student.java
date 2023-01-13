@@ -13,6 +13,16 @@ public class Student {
         this.name = name;
         this.grades = grades;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", grades=" + grades +
+                '}';
+    }
+
+
     public String getName() {
         return name;
     }

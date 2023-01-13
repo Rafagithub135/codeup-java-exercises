@@ -6,10 +6,6 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class GradesApplication {
-    @Override
-    public String toString() {
-        return "GradesApplication{}";
-    }
 
     public static void main(String[] args) {
 
@@ -37,7 +33,7 @@ public class GradesApplication {
         josh.addGrade(70);
         josh.addGrade(83);
 
-        HashMap<String, Student> students = new HashMap<>();
+        Map<String, Student> students = new HashMap<>();
         students.put("John316", john);
         students.put("Rafa135", ralph);
         students.put("Jessicode", jessica);
@@ -45,11 +41,33 @@ public class GradesApplication {
 
         System.out.println("Welcome!");
         System.out.println("\nHere are the GitHub usernames of our students:\n");
-        System.out.println(students);
-
-//        Map<String, String> students = new HashMap<>();
-
-//        System.out.println(studentNames.get("John316"));
+//        System.out.println(students);
+        for (Map.Entry<String, Student> entry : students.entrySet()) {
+            System.out.println("|" + entry.getKey() + "| ");
+        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\nWhat student would you like to see more information on?\n>");
+        String userInput = scanner.nextLine();
+        if (students.containsKey(userInput)) {
+            System.out.println("Name: " + students.get(userInput).getName() + " - GitHub Username: " + userInput);
+            System.out.println("Current Average: " + students.get(userInput).getGradeAverage());
+        } else {
+            System.out.println("Sorry, no student found with the GitHub username of \"" + userInput + "\".");
+            System.out.println("Would you like to see another student? (y/n)");
+            String userResponse = scanner.nextLine();
+            if (userResponse.equalsIgnoreCase("y")) {
+                System.out.println("What student would you like to see more information on?\n>");
+                userInput = scanner.nextLine();
+                if (students.containsKey(userInput)) {
+                    System.out.println("Name: " + students.get(userInput).getName() + " - GitHub Username: " + userInput);
+                    System.out.println("Current Average: " + students.get(userInput).getGradeAverage());
+                } else {
+                    System.out.println("Sorry, no student found with the GitHub username of \"" + userInput + "\".");
+                }
+            } else {
+                System.out.println("Goodbye, and have a wonderful day!");
+            }
+        }
     }
 }
 
