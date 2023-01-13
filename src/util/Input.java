@@ -41,8 +41,14 @@ public class Input {
 
     public int getInt() {
         System.out.println("Enter an integer: ");
-        int userInput = scanner.nextInt();
-        return userInput;
+        int userInput = Integer.parseInt(getString(String.valueOf(Integer.valueOf(scanner.nextInt()))));
+        try {
+            return userInput;
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input.");
+            return getInt();
+        }
+//        return userInput;
     }
 
     public double getDouble(double min, double max) {
