@@ -8,7 +8,7 @@ public class InputTest {
 //      System.out.printf("User Input: %s.%n", userString);
 //      System.out.println(in.yesNo());
 //      System.out.println(in.getInt(1, 10));
-//      System.out.println(in.getInt());
+      System.out.println(in.getInt());
 //      System.out.println(in.getDouble(1, 10));
 //      System.out.println(in.getDouble());
     }
