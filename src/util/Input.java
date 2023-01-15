@@ -10,24 +10,14 @@ public class Input {
     }
 
     public String getString() {
-        System.out.println("Enter a string: ");
-        return scanner.nextLine();
-    }
-
-    public String getString(String prompt) {
-        System.out.println(prompt);
         return scanner.nextLine();
     }
 
     public boolean yesNo() {
-        String userString = getString("Please enter yes or no: ");
-        if (userString.equalsIgnoreCase("y") || userString.equalsIgnoreCase("yes")) {
-            return true;
-        } else {
-            return false;
-        }
+        String userString = scanner.nextLine().toLowerCase();
+        return userString.equalsIgnoreCase("y") || userString.equalsIgnoreCase("yes");
     }
-
+//    stop work here for break
     public int getInt(int min, int max) {
         System.out.printf("Enter a number between %d and %d: ", min, max);
         int userInput = scanner.nextInt();
