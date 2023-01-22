@@ -1,7 +1,7 @@
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        int myFavoriteNumber = 314;
+        int myFavoriteNumber = 316;
         System.out.println(myFavoriteNumber);
         String myString = "This is an example of a string.";
         // When you try to assign a character to a string, you get an error stating they are incompatible types.
