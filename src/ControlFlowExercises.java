@@ -93,30 +93,6 @@ public class ControlFlowExercises {
         }
     }
 }
-
-
-        // TODO Use a do while loop to allow the user to continuously enter numbers until they reply with an "n".
-        // TODO The user should be prompted to enter a grade from 0 to 100.
-        // TODO If the user enters a number outside of the range, they should be prompted to enter a valid number.
-        // TODO Once the user enters a valid number, the application should display the corresponding letter grade.
-        // TODO The application should only continue if the user agrees to.
-        // TODO Grade Ranges:
-        // TODO A : 100 - 88
-        // TODO B : 87 - 80
-        // TODO C : 79 - 67
-        // TODO D : 66 - 60
-        // TODO F : 59 - 0
-
-
-
-
-
-
-
-
-
-
-
 //        System.out.print("Would you like to continue? [y/n] ");
 //        String userCont = convertGrades.next();
 //        if (userContinue.equalsIgnoreCase("y")){
@@ -144,4 +120,3 @@ public class ControlFlowExercises {
 //        } else {
 //            System.out.println("Goodbye!");
 //        }
-
